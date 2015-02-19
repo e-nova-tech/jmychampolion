@@ -1,0 +1,240 @@
+.cofda {
+  /** Generic **/
+}
+.cofda .actions {
+  text-align: center;
+  margin-top: 20px;
+}
+.cofda .actions a.button {
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: normal;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  padding: 9px 18px;
+  text-decoration: none;
+  background: -moz-linear-gradient(center top, #ededed 5%, #dfdfdf 100%);
+  background: -ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ededed), color-stop(100%, #dfdfdf));
+  background-color: #ededed;
+  color: #777777;
+  display: inline-block;
+  text-shadow: 1px 1px 0px #ffffff;
+  -webkit-box-shadow: inset 1px 1px 0px 0px #ffffff;
+  -moz-box-shadow: inset 1px 1px 0px 0px #ffffff;
+  box-shadow: inset 1px 1px 0px 0px #ffffff;
+}
+.cofda .actions a.button[disabled] {
+  color: #ccc;
+}
+.cofda .actions a.button:not([disabled]):hover {
+  background: -moz-linear-gradient(center top, #dfdfdf 5%, #ededed 100%);
+  background: -ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #dfdfdf), color-stop(100%, #ededed));
+  background-color: #dfdfdf;
+}
+.cofda .actions a.button:active {
+  position: relative;
+  top: 1px;
+}
+.cofda .feedback p {
+  text-align: center;
+  font-size: 28px;
+}
+.cofda .feedback .score {
+  width: 300px;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+}
+.cofda .donut {
+  font-family: "RamaGothicM-Heavy", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.cofda .donut path.color0 {
+  fill: #1072b8;
+}
+.cofda .donut path.color1 {
+  fill: #ddd;
+}
+.cofda .donut text {
+  font-size: 60px;
+}
+
+/** Global colors **/
+/** sound colors **/
+.cofda.jmychampolion {
+  margin: auto;
+  width: 458px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+  padding: 0 40px 40px 40px;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+.cofda.jmychampolion .matches {
+  height: 422px;
+  margin-top: 15px;
+}
+.cofda.jmychampolion .matches .match {
+  float: left;
+  padding: 5px;
+  background-color: #eeeeee;
+  margin: 10px 10px 0 0;
+}
+.cofda.jmychampolion .matches .match:nth-of-type(even) {
+  margin-right: 0;
+}
+.cofda.jmychampolion .matches .match.success {
+  background-color: #7fd57f;
+}
+.cofda.jmychampolion .matches .match.active {
+  background-color: #2d96f0;
+}
+.cofda.jmychampolion .matches .match img {
+  float: left;
+}
+.cofda.jmychampolion .matches .match > .top {
+  height: 25px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #ccc;
+}
+.cofda.jmychampolion .matches .match > .image div.success,
+.cofda.jmychampolion .matches .match > .image div.error {
+  position: absolute;
+  z-index: 60000;
+  width: 214px;
+  height: 161px;
+}
+.cofda.jmychampolion .matches .match > .image div.success {
+  background: transparent url(check.png) no-repeat center center;
+}
+.cofda.jmychampolion .matches .match > .image div.error {
+  background: transparent url(cross.png) no-repeat center center;
+}
+.cofda.jmychampolion .sounds {
+  margin-top: 20px;
+}
+.cofda.jmychampolion .sounds div.sound,
+.cofda.jmychampolion .matches div.sound {
+  white-space: nowrap;
+}
+.cofda.jmychampolion .sounds div.sound a:after,
+.cofda.jmychampolion .matches div.sound a:after {
+  font-family: Times New Roman;
+  content: '\25BA';
+  display: inline-block;
+  float: right;
+  color: #bbbbbb;
+  margin-right: 0.5em;
+}
+.cofda.jmychampolion .sounds div.sound.active a,
+.cofda.jmychampolion .matches div.sound.active a {
+  background-color: #2d96f0;
+  color: #fff;
+}
+.cofda.jmychampolion .sounds div.sound.hover a:after,
+.cofda.jmychampolion .matches div.sound.hover a:after {
+  color: #888888;
+}
+.cofda.jmychampolion .sounds div.sound.playing a:after,
+.cofda.jmychampolion .matches div.sound.playing a:after {
+  color: #2d96f0;
+}
+.cofda.jmychampolion .sounds div.sound.active a:after,
+.cofda.jmychampolion .matches div.sound.active a:after {
+  color: #ccc;
+}
+.cofda.jmychampolion .sounds div.sound.active.hover a:after,
+.cofda.jmychampolion .matches div.sound.active.hover a:after {
+  color: #ddd;
+}
+.cofda.jmychampolion .sounds div.sound.active.playing a:after,
+.cofda.jmychampolion .matches div.sound.active.playing a:after {
+  color: #fff;
+}
+.cofda.jmychampolion .sounds div.sound a,
+.cofda.jmychampolion .matches div.sound a {
+  position: relative;
+  padding: 4px 10px;
+  background-color: #eeeeee;
+  text-decoration: none;
+  color: #636363;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+  height: 17px;
+  width: 194px;
+  display: block;
+  margin: auto;
+}
+.cofda.jmychampolion .help {
+  border-bottom: 1px solid #eee;
+  background-color: #eee;
+  margin-top: 10px;
+}
+.cofda.jmychampolion .help p {
+  font-size: 10px;
+  color: #636363;
+  padding: 10px;
+  margin: 0;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+.cofda.jmychampolion .help p.green {
+  color: green;
+}
+.cofda.jmychampolion .help p.red {
+  color: red;
+}
+.cofda.jmychampolion .paginator ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cofda.jmychampolion .paginator ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+.cofda.jmychampolion .paginator ul li a {
+  display: table-cell;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ccc;
+  color: #ccc;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.cofda.jmychampolion .paginator ul li.active a {
+  color: #2d96f0;
+  border-color: #2d96f0;
+}
+.cofda.jmychampolion .paginator ul li.passed a {
+  color: #7fd57f;
+  border-color: #7fd57f;
+}
+.cofda.jmychampolion .clearfix {
+  *zoom: 1;
+}
+.cofda.jmychampolion .clearfix:before,
+.cofda.jmychampolion .clearfix:after {
+  content: " ";
+  display: table;
+}
+.cofda.jmychampolion .clearfix:after {
+  clear: both;
+}

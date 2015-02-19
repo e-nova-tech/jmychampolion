@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/libs/jmyloader-full.min.js"></script>
+    <script src="js/libs/jQuery.jPlayer.2.5.0/jquery.jplayer.min.js"></script>
+    <script src="js/libs/cofplayer.js"></script>
+    <script src="js/libs/cofda.js"></script>
+    <script src="js/libs/jhearnclick.js"></script>
+    <script src="js/jmychampolion.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/libs/jmyloader.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="css/jmychampolion.min.css" media="all" />
+    <script>
+        $(function(){
+            $('.jmychampolion').jMyChampolion({
+                answers : {
+                    "123-456-789" : "123-456-780",
+                    "223-456-789" : "233-456-780",
+                    "323-456-789" : "323-456-780",
+                    "423-456-789" : "433-456-780",
+                    "523-456-789" : "533-456-780",
+                    "623-456-789" : "633-456-780"
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<h1 style="text-align: center">Listen and select the corresponding image</h1>
+<div class="cofda jmychampolion">
+    <div class="sounds clearfix">
+        <div class="sound" id="123-456-789">
+            <a href="demo/media/mp3/homme.mp3">Homme</a>
+        </div>
+        <div class="sound" id="223-456-789">
+            <a href="demo/media/mp3/femme.mp3">Femme</a>
+        </div>
+        <div class="sound" id="323-456-789">
+            <a href="demo/media/mp3/manger.mp3">Manger</a>
+        </div>
+        <div class="sound" id="423-456-789">
+            <a href="demo/media/mp3/boire.mp3">Boire</a>
+        </div>
+        <div class="sound" id="523-456-789">
+            <a href="demo/media/mp3/lafemmemange.mp3">La femme mange</a>
+        </div>
+        <div class="sound" id="623-456-789">
+            <a href="demo/media/mp3/lhommeboit.mp3">L'homme boit</a>
+        </div>
+    </div>
+    <div class="matches clearfix">
+        <div class="slide">
+            <div class="match" id="103-456-780">
+                <div class="top">
+                    <div class="sound">
+                        <a href="demo/media/mp3/homme.mp3">Homme</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/man1.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match" id="113-456-780">
+                <div class="top">
+                    <div class="sound">
+                        <a href="demo/media/mp3/femme.mp3">Femme</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/woman1.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="123-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/man2.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="133-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/woman2.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="match" id="203-456-780">
+                <div class="top">
+                    <div class="sound">
+                        <a href="demo/media/mp3/homme.mp3">Homme</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/man2.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match" id="213-456-780">
+                <div class="top">
+                    <div class="sound">
+                        <a href="demo/media/mp3/femme.mp3">Femme</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/woman1.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="223-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/man1.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="233-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/woman2.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="match" id="303-456-780">
+                <div class="top">
+                    <div class="sound">
+                        <a href="demo/media/mp3/manger.mp3">Manger</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/manger1.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match" id="313-456-780">
+                <div class="top">
+                    <div class="sound">
+                        <a href="demo/media/mp3/boire.mp3">Boire</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/boire1.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="323-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/manger2.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="333-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/boire2.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="match" id="403-456-780">
+                <div class="top">
+                    <div class="sound">
+                        <a href="demo/media/mp3/manger.mp3">Manger</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/manger1.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match" id="413-456-780">
+                <div class="top">
+                    <div class="sound">
+                        <a href="demo/media/mp3/boire.mp3">Boire</a>
+                    </div>
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/boire1.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="423-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/manger2.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="433-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/boire2.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="match selectable" id="503-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/hommemange.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="513-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/hommeboit.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="523-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/femmeboit.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="533-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/femmemange.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="match selectable" id="633-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/hommeboit.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="603-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/femmeboit.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="613-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/femmemange.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="match selectable" id="623-456-780">
+                <div class="top">
+                </div>
+                <div class="image">
+                    <a href="">
+                        <img src="demo/img/hommemange.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="help"><!-- Placeholder. Remove it if you don't want the help component --></div>
+    <div class="paginator"><!-- Placeholder.  Remove it if you don't want the paginator component --></div>
+</div>
+</body>
+</html>

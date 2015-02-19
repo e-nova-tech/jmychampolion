@@ -1,0 +1,186 @@
+/** Global colors **/
+@blueColor: #2d96f0;
+@greenColor: #7fd57f;
+
+@backgroundColor: #f5f5f5;
+@activeColor: @blueColor;
+@passedColor: @greenColor;
+@matchBackgroundColor: #eee;
+
+/** sound colors **/
+@soundArrowBaseColor: #bbb;
+@soundBackgroundColor: @matchBackgroundColor;
+@soundTextColor: #636363;
+
+.cofda.jmychampolion {
+  margin: auto;
+  width: 458px;
+  border: 1px solid #ccc;
+  background-color: @backgroundColor;
+  position: relative;
+  overflow: hidden;
+  padding: 0 40px 40px 40px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  .matches {
+    height: 422px;
+    margin-top: 15px;
+    .match {
+      float: left;
+      padding: 5px;
+      background-color: @matchBackgroundColor;
+      margin: 10px 10px 0 0;
+      &:nth-of-type(even) {
+        margin-right: 0;
+      }
+      &.success {
+        background-color: @passedColor;
+      }
+      &.active {
+        background-color: @activeColor;
+      }
+      img{
+        float: left;
+      }
+      > .top {
+        height: 25px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        background-color: #ccc;
+      }
+      > .image {
+        div.success,
+        div.error {
+          position: absolute;
+          z-index: 60000;
+          width: 214px;
+          height: 161px;
+        }
+        div.success {
+          background: transparent url(check.png) no-repeat center center;
+        }
+        div.error {
+          background: transparent url(cross.png) no-repeat center center;
+        }
+      }
+    }
+  }
+  .sounds {
+    margin-top: 20px;
+  }
+  .sounds,
+  .matches{
+    div.sound {
+      white-space: nowrap;
+      a:after {
+        font-family: Times New Roman;
+        content: '\25BA';
+        display: inline-block;
+        float: right;
+        color: @soundArrowBaseColor;
+        margin-right: 0.5em;
+      }
+      &.active a {
+        background-color: @activeColor;
+        color: #fff;
+      }
+      &.hover a:after {
+        color: darken(@soundArrowBaseColor, 20%);
+      }
+      &.playing a:after {
+        color: @activeColor;
+      }
+      &.active a:after {
+        color: #ccc;
+      }
+      &.active.hover a:after {
+        color: #ddd;
+      }
+      &.active.playing a:after {
+        color: #fff;
+      }
+      a{
+        position: relative;
+        padding: 4px 10px;
+        background-color: @soundBackgroundColor;
+        text-decoration: none;
+        color: @soundTextColor;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        font-family: verdana, arial, helvetica, sans-serif;
+        font-size: 14px;
+        height: 17px;
+        width: 194px;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+
+  .help {
+    border-bottom: 1px solid #eee;
+    background-color: #eee;
+    margin-top: 10px;
+
+    p {
+      font-size: 10px;
+      color: #636363;
+      padding: 10px;
+      margin: 0;
+      font-family: verdana, arial, helvetica, sans-serif;
+      &.green {
+        color: green;
+      }
+      &.red {
+        color: red;
+      }
+    }
+  }
+
+  .paginator {
+    ul {
+      padding: 0;
+      margin-bottom: 0;
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 10px;
+        a {
+          display: table-cell;
+          vertical-align: middle;
+          width: 30px;
+          height: 30px;
+          border: 2px solid #ccc;
+          color: #ccc;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+        }
+        &.active a {
+          color: @activeColor;
+          border-color: @activeColor;
+        }
+        &.passed a {
+          color: @passedColor;
+          border-color: @passedColor;
+        }
+      }
+    }
+  }
+  // Clearfix.
+  .clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+}
