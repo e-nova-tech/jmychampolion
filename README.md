@@ -4,6 +4,9 @@
 # What is it ?
 jMyChampolion is a rosetta stone like type of activity which is customizable, and working as a jquery plugin.
 
+# Demo
+http://www.enova-tech.net/demo/jmychampolion
+
 # Documentation
 You can see the full documentation here :
 http://www.enova-tech.net/jmychampolion
