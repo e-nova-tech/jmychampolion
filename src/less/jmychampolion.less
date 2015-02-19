@@ -40,6 +40,8 @@
       }
       img{
         float: left;
+        /* Fix for ie */
+        border: 0;
       }
       > .top {
         height: 25px;
@@ -77,7 +79,8 @@
         font-family: Times New Roman;
         content: '\25BA';
         display: inline-block;
-        float: right;
+        position: absolute;
+        right: 0;
         color: @soundArrowBaseColor;
         margin-right: 0.5em;
       }
@@ -125,7 +128,7 @@
     margin-top: 10px;
 
     p {
-      font-size: 10px;
+      font-size: 12px;
       color: #636363;
       padding: 10px;
       margin: 0;
